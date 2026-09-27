@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Piece: Dawn of an Era (GitHub Edition)</title>
+    <!-- Menghubungkan file CSS eksternal -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>ONE PIECE: THE GREAT AGE</h1>
+        <div class="subtitle">Era Eksekusi Gol D. Roger (GitHub Pages Edition)</div>
+    </header>
+
+    <div class="grid">
+        <!-- Kolom Kiri: Profil -->
+        <div>
+            <div class="panel">
+                <h2>Profil Karakter</h2>
+                <div class="stat-bar"><span>Nama:</span> <strong id="lbl-name">-</strong></div>
+                <div class="stat-bar"><span>Faksi:</span> <strong id="lbl-faction" style="color:var(--accent)">Orang Biasa (Sipil)</strong></div>
+                <div class="stat-bar"><span>Pangkat/Peran:</span> <strong id="lbl-rank">-</strong></div>
+                <div class="stat-bar"><span>Uang (Beli):</span> <strong id="lbl-beli">0</strong></div>
+                <div class="stat-bar"><span>Reputasi:</span> <strong id="lbl-reputation">0</strong></div>
+                <div class="stat-bar"><span>Kekuatan Fisik:</span> <strong id="lbl-strength">10</strong></div>
+                <div class="stat-bar"><span>Kedisiplinan:</span> <strong id="lbl-discipline">10</strong></div>
+                <div class="stat-bar"><span>Ketenaran:</span> <strong id="lbl-infamy">0</strong></div>
+                <div class="stat-bar"><span>Hari / Waktu:</span> <strong id="lbl-day">Hari 1</strong></div>
+            </div>
+
+            <div class="panel">
+                <h2>Manajemen Save / Load</h2>
+                <button onclick="saveGame()">Simpan Game</button>
+                <button onclick="loadGame()" class="secondary">Muat Game</button>
+                <button onclick="resetGame()" class="danger">Reset Game</button>
+            </div>
+        </div>
+
+        <!-- Kolom Kanan: Aktivitas & Faksi -->
+        <div>
+            <div class="panel">
+                <h2>Aktivitas Harian</h2>
+                <button onclick="actionWork()">Kerja Serabutan (+10 Beli, +1 Kekuatan)</button>
+                <button onclick="actionTrain()">Latihan Fisik (+2 Kekuatan)</button>
+                <button onclick="actionStudy()">Belajar & Membaca (+2 Kedisiplinan)</button>
+                <button onclick="nextDay()" class="success">Lanjut Hari Berikutnya (Turn)</button>
+            </div>
+
+            <div class="panel">
+                <h2>Pilihan Karir & Faksi</h2>
+                <div id="faction-content"></div>
+            </div>
+
+            <div class="panel">
+                <h2>Log Aktivitas Dunia</h2>
+                <div id="log-box">
+                    [1522] Gol D. Roger dieksekusi di Loguetown. Era Bajak Laut Besar dimulai...<br>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Menghubungkan file JavaScript eksternal -->
+<script src="script.js"></script>
+
+</body>
+</html>
